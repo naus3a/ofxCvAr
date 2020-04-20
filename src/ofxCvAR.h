@@ -13,8 +13,8 @@ namespace ofxCv {
     class ARMatrixFilter{
     public:
         ARMatrixFilter(){
-            oldTvec = Mat_<double>::zeros(3, 1);
-            oldRvec = Mat_<double>::zeros(3, 1);
+            oldTvec = cv::Mat_<double>::zeros(3, 1);
+            oldRvec = cv::Mat_<double>::zeros(3, 1);
             smt = 0.9;
             use(true);
         }
